@@ -1,0 +1,16 @@
+# A torch + torchvision-t a hardvernek megfelelő indexből telepítsd, pl. ezek is lehetnek:
+#   NVIDIA (CUDA 12.1):  pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#   AMD (ROCm, Linux):   pip install torch torchvision --index-url https://download.pytorch.org/whl/rocm6.3
+#   AMD (Windows):       pip install torch torchvision --index-url https://download.pytorch.org/whl/rocm6.4
+#   CPU-only:            pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#
+# Ha ezek ezek közül egyik sem jó, akkor sima pip install torch torchvision is működhet
+#
+# Utána: pip install -r requirements.txt
+
+numpy
+Pillow
+scikit-image
+opencv-python
+tqdm
+matplotlib
