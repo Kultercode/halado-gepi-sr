@@ -154,6 +154,19 @@ outputs/
 
 Mérési hardver: AMD Radeon RX 9070 XT (16 GB VRAM), ROCm 7.2, PyTorch.
 
+## Előre betanított modellek
+
+A betanított checkpointok (SRCNN és EDSR ×2) a
+[`pretrained` branch](https://github.com/Kultercode/halado-gepi-sr/tree/pretrained)
+alatt megtalálhatóak, a `checkpoints/` mappában. Klónozás után:
+
+```bash
+git checkout pretrained -- checkpoints/
+python main.py evaluate --tag div2k_test
+```
+
+Így a tanítást nem kell lefuttatni, egyből futtatható a kiértékelés.
+
 ## Referenciák
 
 - Dong et al., 2014 — *Learning a Deep Convolutional Network for Image Super-Resolution* (SRCNN)
